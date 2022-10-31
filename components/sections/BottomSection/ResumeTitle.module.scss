@@ -1,0 +1,61 @@
+@import '../../sass-vars.scss';
+
+
+.topLevelWrap {
+    height: 15rem;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: $body-background;
+
+
+    .wrap {
+        height: 100%;
+        border-bottom: 1px solid $lines-color;
+        border-top: 1px solid $lines-color;
+        position: absolute;
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: $double-lines-width;
+        flex-direction: column;
+
+
+        @media screen and (max-width: $large-phone) {
+            width: 90%;
+        }
+    
+        h1 {
+            @media screen and (min-width: $imac) {
+                font-size: $section-titles-imac;
+            }
+        }
+        &::before, &::after {
+            background: $lines-color;
+            content: "";
+            height: 1px;
+            position: absolute;
+            width: 100%;
+        }
+    
+        &::before {
+            top: 10px
+        }
+    
+        &::after {
+            bottom: 10px;
+        }
+
+        .btns {
+            margin-top: 2rem;
+            margin-right: 12px;
+            
+            @media screen and (max-width: $iphone-se) {
+                display: flex;
+                flex-direction: column;
+            }
+        }
+    }
+}

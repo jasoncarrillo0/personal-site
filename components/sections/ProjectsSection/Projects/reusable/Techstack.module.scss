@@ -1,0 +1,24 @@
+@import '../../../../sass-vars.scss';
+
+.wrap {
+    //bottom: 1rem;
+    //position: absolute;
+    //width: calc(100% - 4rem);
+
+    h3 {
+        text-transform: uppercase;
+        font-size: 21.5px;
+
+        @media screen and (min-width: $imac) {
+            font-size: 30px;
+        }
+    }
+
+    .techWrap {
+        display: flex;
+        flex-direction: row;
+        grid-gap: 1rem;
+        gap: 1rem;
+        flex-wrap: wrap;
+    }
+}

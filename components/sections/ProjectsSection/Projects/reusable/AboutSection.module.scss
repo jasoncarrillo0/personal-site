@@ -1,0 +1,33 @@
+@import '../../../../sass-vars.scss';
+
+.wrap {
+    margin: 4rem 0;
+
+    .innerWrap {
+        padding: 16px;
+
+        .titleWrap {
+            display:flex;
+            flex-direction: column;
+            
+            .title {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                font-size: 22px;
+
+                @media screen and (min-width: $imac) {
+                    font-size: 30px;
+                }
+
+                h4 {
+                    text-transform: uppercase;
+                }
+            }
+
+            hr {
+                margin: 0 0 1rem 0;
+            }
+        }
+    }
+}

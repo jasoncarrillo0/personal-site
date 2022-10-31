@@ -1,0 +1,64 @@
+@import '../../../sass-vars.scss';
+
+
+.wrap {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 500px;
+    border: 2px solid black;
+    box-shadow: 24px;
+    color: white;
+    height: 80vh;
+    width: 70vw;
+    padding: 2rem;
+    overflow-y: scroll;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-size: 17px;
+
+    &:focus {
+        outline: none;
+    }
+    
+
+
+    @media screen and (min-width: $imac) {
+        padding: 6rem;
+        width: 65vw;
+    }
+
+    @media screen and (max-width: $large-phone) {
+        height: 70vh;
+    }
+
+    h2 {
+        text-align: center;
+        text-transform: uppercase;
+        font-size: 28px;
+        margin-bottom: 3rem;
+
+        @media screen and (min-width: $imac) {
+            font-size: 45px;
+        }
+    }
+
+    table {
+        width: 100%;
+
+        tr {
+            width: 100%;
+            display: inline-flex;
+            justify-content: space-between;
+
+            @media screen and (max-width: ($small-laptop + 100px)) {
+                flex-direction: column;
+                align-items: center;
+                gap: 2rem;
+                grid-gap: 2rem;
+            }
+        }
+    }
+}

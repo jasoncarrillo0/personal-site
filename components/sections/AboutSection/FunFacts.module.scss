@@ -1,0 +1,67 @@
+@import '../../sass-vars.scss';
+
+.wrap {
+
+    margin-bottom: 10rem;
+    @media screen and (max-width: $small-laptop) {
+        margin-bottom: 2.5rem;
+    }
+    
+    
+    .after {
+        height: 10rem;
+        background: linear-gradient(4deg, transparent 50%, #4e0606 50.3%);
+
+    }
+
+    .main {
+        color: white;
+        background-color: #4e0606;
+        padding: 5rem 5rem;
+        display: flex;
+        gap: 4rem;
+        grid-gap: 4rem;
+
+        @media screen and (max-width: $small-laptop) {
+            padding: 2.5rem;
+        }
+
+        @media screen and (max-width: $tablet + 100px) {
+            padding: 1rem;
+            flex-direction: column-reverse;
+            align-items: flex-end;
+            gap: 1rem;
+            grid-gap: 1rem;
+            padding: 0 2rem;
+        }
+
+        .textArea {
+            flex: 1;
+            text-align: right;
+            max-width: 100%;
+
+            @media screen and (max-width: $tablet + 100px) {
+                width: 100%;
+            }
+
+            li {
+                margin: 1rem 0;
+
+                @media screen and (min-width: $imac) {
+                    font-size: 25px !important;
+                    margin: 2rem 0;
+                }
+
+                @media screen and (max-width: $small-laptop) {
+                    font-size: 16px !important;
+                }
+            }
+            
+        }
+
+        p {
+            margin-top: 1rem;
+            font-size: 20px;
+        }
+    }
+}

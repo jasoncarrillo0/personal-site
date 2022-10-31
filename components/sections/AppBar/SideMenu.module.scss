@@ -1,0 +1,15 @@
+@import '../../sass-vars.scss';
+
+.icon {
+    @media screen and (min-width: $imac) {
+        font-size: 26px;
+    }
+}
+
+.text {
+    span {
+        @media screen and (min-width: $imac) {
+            font-size: 22px;
+        }
+    }
+}

@@ -1,0 +1,95 @@
+@import '../../sass-vars.scss';
+
+
+.wrap {
+    position: relative;
+    height: 17rem;
+    padding-top: 4rem;
+
+    .line {
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: calc(50% - 2rem);
+        z-index: 1;
+
+        @media screen and (min-width: $imac) {
+            bottom: calc(50% - 72px);
+
+        }
+
+        hr {
+            width: 100%;
+            border: 1.5px solid $lines-color;
+        }
+    }
+
+    .diamondWrap, .diamondWrapCopy {
+        position: absolute;
+        left: 0;
+        right: 0;
+        z-index: 9;
+
+        .diamond, .diamondCopy {
+            position: relative;
+            height: 250px;
+            width: 250px;
+            line-height: 250px;
+            text-align: center;
+            margin: 10px 40px;
+            color: white;
+            font-size: 30px;
+            font-weight: bold;
+            margin: 0 auto 4rem auto;
+            background-color: $body-background;
+
+
+
+            @media screen and (min-width: $imac) {
+                height: 330px;
+                width: 330px;
+                line-height: 330px;
+                font-size: $section-titles-imac;
+            }
+
+
+
+            
+            &::before {
+              position: absolute;
+              content: "";
+              top: 0px;
+              left: 0px;
+              height: 100%;
+              width: 100%;
+              border: 1.5px solid $lines-color;
+              transform: rotateX(45deg) rotateZ(45deg);
+            }
+          
+            &::after {
+              position: absolute;
+              top: 10px;
+              left: 10px;
+              content: "";
+              height: calc(
+                100% - 22px
+              ); /* -22px is 2 * 10px gap on either side - 2px border on either side */
+              width: calc(
+                100% - 22px
+              ); /* -22px is 2 * 10px gap on either side - 2px border on either side */
+              border: 2px solid $lines-color;
+              transform: rotateX(45deg) rotateZ(45deg);
+            }
+        }
+    }
+
+    .diamondWrapCopy {
+        z-index: 7;
+        .diamondCopy {
+            &::before, &::after {
+                content: unset;
+            }
+        }
+    }
+    
+}

@@ -1,0 +1,24 @@
+@import '../sass-vars.scss';
+
+.wrap {
+    
+    position: fixed;
+    right: 0;
+    z-index: 9999;
+    .iconWrap {
+        padding: 1rem;
+
+        @media screen and (min-width: $imac) {
+            padding: 2rem;
+        }
+        
+        .icon {
+            font-size: 30px;
+            color: white;
+
+            @media screen and (min-width: $imac) {
+                font-size: 45px;
+            }
+        }
+    }
+}

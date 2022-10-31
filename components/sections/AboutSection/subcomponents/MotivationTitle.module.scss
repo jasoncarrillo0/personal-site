@@ -1,0 +1,17 @@
+@import '../../../sass-vars.scss';
+
+.wrap {
+    display: flex;
+    flex-direction: column;
+
+    hr {
+        width: 100%;
+    }
+
+    .title {
+        @media screen and (min-width: $imac) {
+            font-size: $section-titles-imac + 5px !important;
+        }
+    }
+    
+}

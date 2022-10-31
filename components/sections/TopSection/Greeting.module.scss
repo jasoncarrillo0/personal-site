@@ -1,0 +1,132 @@
+@import '../../sass-vars.scss';
+
+@keyframes fadeInTitle {
+    0% {
+        opacity: 0;
+        color: grey;
+    }
+    25% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes linesIn {
+    0% {
+        width: 0;
+        opacity: 0;
+        display: none;
+    }
+    50% {
+        width: 0;
+        display: unset;
+        opacity: 1;
+    }
+    100% {
+        width: 100%;
+    }
+} 
+
+@keyframes fadeInPunchline {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.wrap {
+    
+    position: absolute;
+    transform: translate(-47%, 120%);
+    left: 50%;
+    top: 0;
+    z-index: 9999;
+    color: white;
+    text-align: center;
+    @media screen and (max-width: $small-laptop) {
+        transform: translate(-47%, 70%);
+    }
+
+    .title {
+        
+        font-weight: 700;
+        text-transform: uppercase;
+        animation: fadeInTitle;
+        animation-timing-function: ease-in;
+        animation-duration: 4s;
+        display: inline-block;
+        font-size: 35px;
+        opacity: 1;
+        position: relative;
+        z-index: 1;
+        color: white;
+        text-align: center;
+        width: 19rem;
+
+        @media screen and (min-width: $imac) {
+            width: 25rem;
+            font-size: 45px;
+        }
+
+        @media screen and (max-width: $small-laptop) {
+            font-size: 24px;
+        }
+
+        @media screen and (max-width: $large-phone) {
+            width: 14rem;
+        }
+
+        &:before, &:after {
+            animation: linesIn;
+            animation-duration: 2s;
+            background: $title-lines-color;
+            content: "";
+            display: block;
+            height: 2px;
+            position: absolute;
+            width: 100%;
+            opacity: 1;
+
+            
+        }
+
+        &:before {
+            top: 0;
+            left: 0;
+        }
+
+        &:after {
+            bottom: 0;
+            right: 0;
+        }
+    }
+
+    .punchline {
+        color: $punchline-color;
+        opacity: 1;
+        animation: fadeInPunchline;
+        animation-duration: 5s;
+        margin-top: 1rem;
+
+        @media screen and (min-width: $imac) {
+            font-size: 22px;
+        }
+
+        @media screen and (max-width: $small-laptop) {
+            font-size: 14px;
+        }
+
+
+        @media screen and (max-width: 376px) {
+            width: 90%;
+            margin: 1rem auto;
+        }
+    }
+}

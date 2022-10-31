@@ -1,0 +1,58 @@
+@import '../../../../sass-vars.scss';
+
+
+.wrap {
+    top: 50% !important;
+    left: 50% !important;
+    transform: translate(-50%, -50%) !important;
+    width: 500px;
+    box-shadow: 24px;
+    color: white;
+    height: 80vh;
+    width: 70vw;
+    padding: 2rem;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-size: 17px;
+
+    &:focus {
+        outline: none;
+    }
+    
+
+
+    .box {
+        width: 400px;
+        margin: 0 auto;
+        padding: 1rem;
+        background: black;
+
+        p {
+            margin: 2rem 0;
+        }
+        .btnWrap {
+            display: flex;
+            align-items: flex-start;
+            justify-content: space-between;
+
+            @media screen and (max-width: $iphone-x) {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            a {
+                @media screen and (max-width: $iphone-x) {
+                    margin-bottom: 1rem !important;
+                }
+            }
+            
+        }
+
+        @media screen and (max-width: $tablet) {
+            max-width: calc(100% - 2rem);
+        }
+    }
+}

@@ -1,0 +1,58 @@
+@import '../sass-vars.scss';
+
+.wrap {
+    position: relative;
+    padding: 12em 0 4em 0;
+    margin-bottom: 4rem;
+
+
+    &::before {
+        content: "";
+        background: $lines-color;
+        height: 15%;
+        position: absolute;
+        left: 50%;
+        top: 0;
+        width: 1px;
+        z-index: 0;
+    }
+
+    .projectsWrap {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        justify-items:center;
+        gap: 2rem;
+        grid-gap: 2rem;
+        align-items: center;
+        margin: 4rem 3rem;
+
+        @media screen and (min-width: $imac) {
+            
+            gap: 13rem;
+            grid-gap: 13rem;
+            justify-items: center;
+            width: 70%;
+            margin: 0 auto;
+        }
+
+        @media screen and (max-width: $small-laptop) {
+            margin: 0 2rem;
+        }
+
+        @media screen and (max-width: $small-laptop - 1) {
+            grid-template-columns: 1fr 1fr;
+            margin: 0 8rem;
+
+        }
+
+        @media screen and (max-width: $tablet) {
+            grid-template-columns: 1fr 1fr;
+            margin: 0 5rem;
+        }
+
+        @media screen and (max-width: $large-phone) {
+            grid-template-columns: 1fr;
+            margin: 0 2rem;
+        }
+    }
+}

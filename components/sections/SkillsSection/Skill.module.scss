@@ -1,0 +1,31 @@
+@import '../../sass-vars.scss';
+.wrap {
+    text-align: center;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 180px;
+    //width: 20%;
+    align-items: center;
+    
+    img {
+        width: 120px;
+        margin-bottom: 2rem;
+
+        @media screen and (max-width: $tablet) {
+            width: 90px;
+        }
+
+        @media screen and (max-width: 376px) {
+            width: 100px;
+        }
+    }
+    p {
+        margin: 0;
+        position: absolute;
+        bottom: 0;
+        color: white;
+        text-transform: uppercase;
+    }
+}

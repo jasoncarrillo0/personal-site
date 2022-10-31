@@ -1,0 +1,61 @@
+@import '../../sass-vars.scss';
+
+
+.topLevelWrap {
+    height: 10rem;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: $body-background;
+    margin-bottom: 7rem;
+
+
+    .wrap {
+        height: 100%;
+        border-bottom: 1px solid $lines-color;
+        border-top: 1px solid $lines-color;
+        position: absolute;
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 50%;
+
+        @media screen and (max-width: $large-phone) {
+            width: 88%;
+        }
+    
+        h2 {
+            margin: 2rem 0;
+            font-size: 30px;
+            text-align: center;
+
+            
+            @media screen and (min-width: $imac) {
+                font-size: $section-titles-imac;
+            }
+
+            @media screen and (max-width: $small-laptop) {
+                font-size: 24px;
+            }
+        }
+
+        
+        &::before, &::after {
+            background: $lines-color;
+            content: "";
+            height: 1px;
+            position: absolute;
+            width: 100%;
+        }
+    
+        &::before {
+            top: 10px
+        }
+    
+        &::after {
+            bottom: 10px;
+        }
+    }
+}

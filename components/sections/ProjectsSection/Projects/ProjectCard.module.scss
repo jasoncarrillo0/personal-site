@@ -1,0 +1,115 @@
+@import '../../../sass-vars.scss';
+
+.wrap {
+    width: 300px;
+    height: 410px;
+    position: relative;
+
+    @media screen and (min-width: $imac) {
+        width: 336px;
+        height: 455px;
+    }
+
+    @media screen and (max-width: $small-laptop) {
+        width: 275px;
+        height: 385px;
+    }
+
+    @media screen and (max-width: $iphone-se) {
+        width: 250px;
+    }
+    
+
+    .topCardWrap {
+
+        position: relative;
+        height: 50%;
+
+        @media screen and (max-width: $iphone-x) {
+            height: 45%;
+        }
+
+        img {
+            width: 100%;
+        }
+
+        .svgWrap {
+            height: 100%;
+            width: 100%;
+            position: absolute;
+            top: 0;
+            cursor: pointer;
+
+            &:hover {
+
+                .codeIcon {
+                    position: absolute;
+                    left: 50%;
+                    top: 50%;
+                    transform: translate(-50%, -70%);
+                    font-size: 100px;
+                    font-weight: bold;
+                    color: white;
+                }
+
+                .msg {
+                    opacity: 1;
+                    transform: translate(-50%, 70%);
+                }
+            }
+
+            .msg {
+                opacity: 0;
+                transition: all 0.5s;
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                transform: translate(-50%, 95%);
+            }
+
+
+            .codeIcon {
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                transform: translate(-50%, -50%);
+                font-size: 100px;
+                font-weight: bold;
+                color: white;
+                transition: all 0.4s;
+            }
+        }
+
+        
+    }
+
+    .cardContent {
+        background: $project-card-bg;
+        height: 30%;
+
+        @media screen and (max-width: $iphone-x) {
+            height: 35%;
+        }
+
+        .titleClass {
+            @media screen and (min-width: $imac) {
+                font-size: 28px;
+            }
+        }
+
+        .desc {
+            @media screen and (min-width: $imac) {
+                font-size: 16px;
+            }
+        }
+        
+    }
+
+    .actionsArea {
+        background: $project-card-bg;
+
+        @media screen and (min-width: $imac) {
+            padding: 12px;
+        }
+    }
+}

@@ -1,0 +1,25 @@
+.wrap {
+    background: #1a1a1a;
+    margin-top: 3rem;
+    height: 9rem;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    justify-content: center;
+    flex-direction: column;
+
+    .btns {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1.5rem;
+        justify-items: center;
+
+        div {
+            grid-column: 1/-1;
+        }
+    }
+
+    div {
+        color: rgb(138, 138, 138);
+    }
+}

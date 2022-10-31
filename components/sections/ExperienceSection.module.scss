@@ -1,0 +1,68 @@
+@import '../sass-vars.scss';
+.wrap {
+    background: #1c1c1c;
+    overflow: hidden;
+    
+
+    h1 {
+        color: rgb(226, 226, 226);
+        text-align: center;
+    }
+
+    .timeline {
+        margin: 0 auto;
+        padding: 50px 16px;
+        margin-left: 5%;
+        
+        @media screen and (max-width: $imac) and (min-width: $imac) {
+            padding: 100px 16px;
+            align-items: flex-start;
+        }
+
+        
+
+        @media screen and (max-width: $small-laptop) and (min-width: $small-laptop) {
+            width: 100%;
+        }
+        @media screen and (max-width: $small-laptop - 1) {
+            align-items: flex-start;
+        }
+
+        @media screen and (max-width: $large-phone) {
+            margin-left: -5%;
+            width: 100%;
+            align-items: center;
+        }
+
+        li {
+            width: 70%;
+
+            
+
+
+            @media screen and (min-width: $imac) {
+                margin-left: 4%;
+            }
+
+            @media screen and (max-width: $large-laptop) {
+                width: 77%;
+            }
+
+            @media screen and (max-width: $small-laptop) {
+                width: 85%;
+            }
+
+            @media screen and (max-width: $tablet) {
+                width: 95%;
+            }
+
+            @media screen and (max-width: $large-phone) {
+                width: 100%;
+            }
+
+            @media screen and (max-width: $iphone-x) {
+                width: 105%;
+            }
+        }
+    }
+}

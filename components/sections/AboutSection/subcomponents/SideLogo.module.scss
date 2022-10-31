@@ -1,0 +1,34 @@
+@import '../../../sass-vars.scss';
+.wrap {
+    width: 225px;
+    height: 225px;
+    display: flex;
+    border: 1px solid white;
+    background-color: #11103e;
+    border-radius: 50%;
+    position: relative;
+
+    @media screen and (min-width: $imac) {
+        width: 270px;
+        height: 270px;
+    }
+
+    @media screen and (max-width: $tablet + 100px) {
+        width: 175px;
+        height: 175px;
+    }
+
+
+    @media screen and (max-width: $large-phone) {
+        width: 100px;
+        height: 100px;
+    }
+
+    .bolt {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        max-width: 58%;
+    }
+}

@@ -1,0 +1,67 @@
+@import '../../sass-vars.scss';
+
+
+
+
+.wrap {
+
+    .contentWrap {
+        width: 900px;
+    
+        @media screen and (max-width: $large-phone) {
+            width: unset;
+        }
+
+        @media screen and (max-width: $iphone-se) {
+            width: 123%;
+        }
+
+        h2 {
+            text-transform: uppercase;
+            position: relative;
+            top: -7px;
+    
+            @media screen and (min-width: $imac) {
+                font-size: 30px;
+                line-height: 30px;
+            }
+
+            @media screen and (max-width: $large-phone) {
+                font-size: 20px;
+                line-height: unset;
+            }
+
+            @media screen and (max-width: $iphone-se) {
+                font-size: 16px;
+                line-height: unset;
+            }
+        }
+        p {
+            display: inline-block;
+            width: 500px;
+            letter-spacing: 0.55px;
+            color: #9b9b9b;
+            font-weight: 600;
+            margin-bottom: 1.75rem;
+
+            @media screen and (max-width: $large-phone) {
+                width: unset;
+            }
+
+            @media screen and (max-width: $iphone-se) {
+                width: 125px;
+            }
+        }
+        hr {
+            margin-bottom: 1rem;
+        }
+    }
+    
+    .dateWrap {
+    
+        @media screen and (min-width: $imac) {
+            font-size: 24px !important;
+            line-height: 24px !important;
+        }
+    }
+}
