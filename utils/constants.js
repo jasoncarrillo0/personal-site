@@ -26,3 +26,15 @@ export const theme = createTheme({
 export function createEmotionCache() {
     return createCache({ key: "css", prepend: true });
 }
+
+
+
+export const SCROLL_ELEMENT_NAMES = {
+    PROJECTS_SECTION: "PROJECTS_SECTION",
+    SKILLS_SECTION: "SKILLS_SECTION",
+    EXPERIENCE_SECTION: "EXPERIENCE_SECTION",
+    ABOUT_SECTION: "ABOUT_SECTION",
+    EDUCATION_SECTION: "EDUCATION_SECTION",
+    RESUME_SECTION: "RESUME_SECTION",
+    EMAIL_SECTION: "EMAIL_SECTION"
+}

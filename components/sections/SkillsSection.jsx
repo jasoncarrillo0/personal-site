@@ -18,7 +18,8 @@ import semantic from '../../public/skills/semantic-ui-logo.png';
 import sql from '../../public/skills/sql-logo.png';
 import Skill from './SkillsSection/Skill';
 import ExperienceTitle from './ExperienceSection/ExperienceTitle';
-
+import { Element } from 'react-scroll'
+import { SCROLL_ELEMENT_NAMES } from '../../utils/constants';
 const skills = [
     { "React": react },
     { "Redux": redux },
@@ -47,17 +48,19 @@ const SkillsSection = () => {
 
     return (
 
-        <div className={s.wrap}>
-            <ExperienceTitle title="SKILLS" backgroundColor="#161616"/>
-            <div className={s.skillsWrap}>
-            {
-                skills.map((skill, i) => {
-                    const key = Object.keys(skill)[0];
-                    return <Skill key={i} imageSrc={skill[key]} name={key}/>
-                })
-            }
-            </div>
-        </div>
+        <Element name={SCROLL_ELEMENT_NAMES.SKILLS_SECTION}>
+            <section className={s.wrap}>
+                <ExperienceTitle title="SKILLS" backgroundColor="#161616"/>
+                <div className={s.skillsWrap}>
+                {
+                    skills.map((skill, i) => {
+                        const key = Object.keys(skill)[0];
+                        return <Skill key={i} imageSrc={skill[key]} name={key}/>
+                    })
+                }
+                </div>
+            </section>
+        </Element>
     );
 };
 

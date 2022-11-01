@@ -1,8 +1,5 @@
 import React from 'react';
-import {
-    wrap,
-    projectsWrap
-} from './ProjectsSection.module.scss';
+import s from './ProjectsSection.module.scss';
 import AbTestProject from './ProjectsSection/Projects/ab-tests/AbTestProject';
 import ProjectsTitle from './ProjectsSection/ProjectsTitle';
 import CustomerDataProject from './ProjectsSection/Projects/in-app-purchase/CustomerDataProject';
@@ -11,6 +8,8 @@ import CrwnClothingProject from './ProjectsSection/Projects/crwn-clothing/CrwnCl
 import WordPressSites from './ProjectsSection/Projects/wordpress/WordPressSites';
 import SpotifySearchApp from './ProjectsSection/Projects/spotify-app/SpotifyAppProject';
 import ViewGithub from './ProjectsSection/ViewGithub';
+import { Element } from 'react-scroll';
+import { SCROLL_ELEMENT_NAMES } from '../../utils/constants';
 const projects = {
     abtests: {
         title: "A/B Test Collaboration Tool",
@@ -41,18 +40,21 @@ const ProjectsSection = () => {
 
 
     return (
-        <div className={wrap}>
-            <ProjectsTitle/>
-            <div className={projectsWrap}>
-                <AbTestProject {...projects.abtests}/> 
-                <CustomerDataProject {...projects.customerDataProj}/>
-                <NaggiarProject {...projects.naggiarProj}/>
-                <WordPressSites {...projects.wordPressSites}/>
-                <CrwnClothingProject {...projects.crwnClothingProj}/>
-                <SpotifySearchApp {...projects.spotifySearchApp}/>
-            </div>
-            <ViewGithub/>
-        </div>
+        <Element name={SCROLL_ELEMENT_NAMES.PROJECTS_SECTION}>
+            <section className={s.wrap}>
+                <ProjectsTitle/>
+                <div className={s.projectsWrap}>
+                    <AbTestProject {...projects.abtests}/> 
+                    <CustomerDataProject {...projects.customerDataProj}/>
+                    <NaggiarProject {...projects.naggiarProj}/>
+                    <WordPressSites {...projects.wordPressSites}/>
+                    <CrwnClothingProject {...projects.crwnClothingProj}/>
+                    <SpotifySearchApp {...projects.spotifySearchApp}/>
+                </div>
+                <ViewGithub/>
+            </section>
+        </Element>
+        
     );
 };
 

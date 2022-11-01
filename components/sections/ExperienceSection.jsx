@@ -3,7 +3,8 @@ import s from './ExperienceSection.module.scss';
 import Timeline from '@mui/lab/Timeline';
 import ExperienceItem from './ExperienceSection/ExperienceItem';
 import ExperienceTitle from './ExperienceSection/ExperienceTitle';
-
+import { Element } from 'react-scroll';
+import { SCROLL_ELEMENT_NAMES } from '../../utils/constants';
 
 
 
@@ -43,14 +44,17 @@ const ExperienceSection = ({}) => {
 
 
     return (
-        <div className={s.wrap}>
-            <ExperienceTitle title="EXPERIENCE" backgroundColor="#1c1c1c"/>
-            <Timeline className={s.timeline} position={"right"}>
-            {
-                jobs.map((job, idx) => <ExperienceItem key={idx} {...job}/>)
-            }
-            </Timeline>
-        </div>
+        <Element name={SCROLL_ELEMENT_NAMES.EXPERIENCE_SECTION}>
+            <section className={s.wrap}>
+                <ExperienceTitle title="EXPERIENCE" backgroundColor="#1c1c1c"/>
+                <Timeline className={s.timeline} position={"right"}>
+                {
+                    jobs.map((job, idx) => <ExperienceItem key={idx} {...job}/>)
+                }
+                </Timeline>
+            </section>
+        </Element>
+        
     );
 };
 
