@@ -1,4 +1,5 @@
 import dynamic from "next/dynamic";
+import Head from "next/head";
 import s from './App.module.scss';
 
 const DynamicAppBar = dynamic(() => import("./sections/AppBar"), { ssr: false});
@@ -15,6 +16,10 @@ const DynamicFooter = dynamic(() => import('./sections/Footer'), { ssr: false});
 const App = () => {
     return (
         <div className={s.wrap}>
+            <Head>
+                <title>Home | Jason Carrillo</title>
+                <link rel="shortcut icon" href="/favicon.svg" />
+            </Head>
             <DynamicAppBar/>
             <DynamicTopSection/>
             <DynamicProjectsSection/>
