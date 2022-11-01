@@ -31,7 +31,15 @@
     }
 
     @media screen and (max-width: $large-phone) {
-        height: 70vh;
+        height: 80vh;
+        width: 80vw;
+        padding: 1rem;
+    }
+
+    @media screen and (max-width: $iphone-se) {
+        height: 80vh;
+        width: 90vw;
+        padding: 1rem;
     }
 
     h2 {

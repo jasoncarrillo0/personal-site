@@ -1,14 +1,5 @@
-import AppBar from "./sections/AppBar"
-import TopSection from './sections/TopSection';
-import ProjectsSection from './sections/ProjectsSection';
-import ExperienceSection from './sections/ExperienceSection';
-import SkillsSection from './sections/SkillsSection';
-import AboutSection from "./sections/AboutSection";
-import BottomSection from './sections/BottomSection';
-import Footer from './sections/Footer';
 import dynamic from "next/dynamic";
-
-
+import s from './App.module.scss';
 
 const DynamicAppBar = dynamic(() => import("./sections/AppBar"), { ssr: false});
 const DynamicTopSection = dynamic(() => import('./sections/TopSection'), {ssr: false});
@@ -23,7 +14,7 @@ const DynamicFooter = dynamic(() => import('./sections/Footer'), { ssr: false});
 
 const App = () => {
     return (
-        <div>
+        <div className={s.wrap}>
             <DynamicAppBar/>
             <DynamicTopSection/>
             <DynamicProjectsSection/>

@@ -19,7 +19,6 @@ const Footer = () => {
                 <IconButton href="https://github.com/jasoncarrillo0?tab=repositories" target="_blank" sx={btnStyle}>
                     <GitHubIcon/>
                 </IconButton>
-                <div>Built with Gatsby</div>
 
             </div>
 

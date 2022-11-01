@@ -9,7 +9,7 @@
         width: 900px;
     
         @media screen and (max-width: $large-phone) {
-            width: unset;
+            width: 20%;
         }
 
         @media screen and (max-width: $iphone-se) {

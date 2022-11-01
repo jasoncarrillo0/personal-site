@@ -11,6 +11,7 @@
     
     img {
         width: 120px;
+        height: auto;
         margin-bottom: 2rem;
 
         @media screen and (max-width: $tablet) {

@@ -11,8 +11,6 @@ import CrwnClothingProject from './ProjectsSection/Projects/crwn-clothing/CrwnCl
 import WordPressSites from './ProjectsSection/Projects/wordpress/WordPressSites';
 import SpotifySearchApp from './ProjectsSection/Projects/spotify-app/SpotifyAppProject';
 import ViewGithub from './ProjectsSection/ViewGithub';
-import { RefsContext } from '../../pages/index';
-// maybe i can have some chips with technology used
 const projects = {
     abtests: {
         title: "A/B Test Collaboration Tool",

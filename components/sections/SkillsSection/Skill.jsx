@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import React from 'react';
 import s from './Skill.module.scss';
 
@@ -7,7 +8,11 @@ import s from './Skill.module.scss';
 const Skill = ({ imageSrc, name }) => {
     return (
         <div className={s.wrap}>
-            <img src={imageSrc}/>
+            <Image
+                src={imageSrc}
+                alt="code logo"
+                
+            />
             <p>{name}</p>
         </div>
     );

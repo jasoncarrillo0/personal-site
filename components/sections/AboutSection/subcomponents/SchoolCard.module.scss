@@ -9,9 +9,12 @@
         width: 75%;
     }
 
-    @media screen and (max-width: $iphone-se) {
-        width: 70%;
+    @media screen and (max-width: $large-phone) {
+        width: 100%;
+        padding: 1.5rem;
     }
+
+    
     
     img {
         max-width: 345px;

@@ -11,7 +11,8 @@
         background: $lines-color;
         height: 15%;
         position: absolute;
-        left: 50%;
+        transform: translate(50%);
+        right: 50%;
         top: 0;
         width: 1px;
         z-index: 0;
@@ -39,7 +40,7 @@
             margin: 0 2rem;
         }
 
-        @media screen and (max-width: $small-laptop - 1) {
+        @media screen and (max-width: ($small-laptop - 1px)) {
             grid-template-columns: 1fr 1fr;
             margin: 0 8rem;
 

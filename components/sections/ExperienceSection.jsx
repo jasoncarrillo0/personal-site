@@ -20,7 +20,7 @@ const jobs = [
     },
     {
         company: "Personal Development",
-        dates: "January 2020 - Present",
+        dates: "Jan. 2020 - Present",
         description: "150+ hours teaching myself full-stack development. I've deployed more than 5 projects, built a spotify search app, and built an e-commerce store, and learned SQL."
     },
     {
@@ -30,7 +30,7 @@ const jobs = [
     },
     {
         company: "Internet Marketing Factors, Inc.",
-        dates: "January 2017 - March 2017",
+        dates: "Jan. 2017 - March 2017",
         description: "Built a web app with Python/Flask that automated a data entry task, grabbed data from semrush.com's API, and output valuable marketing data."
     }
 ]

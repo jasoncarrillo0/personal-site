@@ -53,7 +53,7 @@ const SkillsSection = () => {
             {
                 skills.map((skill, i) => {
                     const key = Object.keys(skill)[0];
-                    return <Skill key={i} publicrc={skill[key]} name={key}/>
+                    return <Skill key={i} imageSrc={skill[key]} name={key}/>
                 })
             }
             </div>

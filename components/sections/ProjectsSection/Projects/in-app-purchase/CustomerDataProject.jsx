@@ -5,6 +5,7 @@ import { CardActions, CardContent, CardMedia, Typography, Button } from '@mui/ma
 import CodeIcon from '@mui/icons-material/Code';
 import bgCodeImg from '../../../../../public/proj-bg.jpg';
 import ProjectModal from '../ProjectModal';
+import Image from 'next/image';
 
 const AbTestProject = ({ title, summary }) => {
     const [open, setOpen] = useState(false);
@@ -30,8 +31,11 @@ const AbTestProject = ({ title, summary }) => {
             <CardMedia
                 component={() => (
                     <div className={s.topCardWrap}>
-                        <img src={bgCodeImg}/>
-                        <div className={s.svgWrap} onClick={() => setOpen(true)}>
+                        <Image
+                            src={bgCodeImg}
+                            alt="code logo"
+                            className={s.codeLogo}
+                        />                        <div className={s.svgWrap} onClick={() => setOpen(true)}>
                             <CodeIcon className={s.codeIcon}/>
                             <p className={s.msg}>View Project</p>
                         </div>

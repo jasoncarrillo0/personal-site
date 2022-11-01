@@ -4,7 +4,9 @@
     width: 300px;
     height: 410px;
     position: relative;
-
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     @media screen and (min-width: $imac) {
         width: 336px;
         height: 455px;
@@ -25,12 +27,14 @@
         position: relative;
         height: 50%;
 
-        @media screen and (max-width: $iphone-x) {
-            height: 45%;
-        }
+        
 
         img {
             width: 100%;
+        }
+
+        .codeLogo {
+            height: 192px;
         }
 
         .svgWrap {
@@ -85,11 +89,9 @@
 
     .cardContent {
         background: $project-card-bg;
-        height: 30%;
+        height: 40%;
 
-        @media screen and (max-width: $iphone-x) {
-            height: 35%;
-        }
+
 
         .titleClass {
             @media screen and (min-width: $imac) {
@@ -106,6 +108,7 @@
     }
 
     .actionsArea {
+        height: 10%;
         background: $project-card-bg;
 
         @media screen and (min-width: $imac) {

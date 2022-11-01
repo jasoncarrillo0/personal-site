@@ -6,7 +6,7 @@ const ColorDirectional = () => {
     return (
         <div 
             className={s.wrap}
-            style={{backgroundImage: `url(${svg})`}}
+            style={{backgroundImage: `url(${svg.src})`}}
         >
             
         </div>

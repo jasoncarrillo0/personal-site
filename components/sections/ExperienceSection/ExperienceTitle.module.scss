@@ -4,13 +4,13 @@
 .wrap {
     position: relative;
     height: 17rem;
-    padding-top: 4rem;
-
+    margin-top: 4rem;
+    
     .line {
         position: absolute;
-        left: 0;
-        right: 0;
-        bottom: calc(50% - 2rem);
+        top: 50%; right: 50%;
+        width: 100%;
+        transform: translate(50%,-50%);
         z-index: 1;
 
         @media screen and (min-width: $imac) {
@@ -26,8 +26,8 @@
 
     .diamondWrap, .diamondWrapCopy {
         position: absolute;
-        left: 0;
-        right: 0;
+        top: 50%; right: 50%;
+        transform: translate(50%,-50%);
         z-index: 9;
 
         .diamond, .diamondCopy {
@@ -40,7 +40,6 @@
             color: white;
             font-size: 30px;
             font-weight: bold;
-            margin: 0 auto 4rem auto;
             background-color: $body-background;
 
 

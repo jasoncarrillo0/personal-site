@@ -3,6 +3,7 @@ import React from 'react';
 import { isOldSafari } from '../../../helpers';
 import s from './SchoolCard.module.scss';
 import { isSafari, fullBrowserVersion } from 'react-device-detect';
+import Image from 'next/image';
 const SchoolCard = ({ imageSrc, degree }) => {
     const imgStyle = {
         maxHeight: "77px"
@@ -12,7 +13,11 @@ const SchoolCard = ({ imageSrc, degree }) => {
 
     return (
         <Paper className={s.wrap} style={oldSafari ? {marginBottom: '3rem'} : {}}>
-            <img style={ degree.includes("Management") ? imgStyle : {}} src={imageSrc}/>
+            <Image
+                style={ degree.includes("Management") ? imgStyle : {}}
+                src={imageSrc}
+                alt="school image"
+            />
             <p className={s.degreeClass}>{degree}</p>
         </Paper>
     );
