@@ -12,16 +12,14 @@ const AbTestProject = ({ title, summary }) => {
     const data = {
         title: "Marketing Data App",
         frontendInfo: "Frontend included datatables with asynchronous API fetching, querying data based off of table column field input, and data pagination.",
-        backendInfo: "The backend was a dockerized express server that gathered marketing data and validated in-app-purchases from various android Apps. My teammate and I wrote complex MongoDB queries to extract marketing insights from 100,000+ records saved in my DB.",
-        purpose: "The primary purpose of the app was to validate in-app-purchases and capture basic purchase information. From that data we could extract and display marketing insights into the performance of specific applications.",
+        backendInfo: "The backend is a dockerized express server that gathered marketing data and validated thousands of daily in-app-purchases from various android Apps. My teammate and I wrote unnecessarily (see about section) complex MongoDB queries to extract marketing insights from 100,000+ records saved in my DB.",
+        purpose: "The primary purpose of the app is to validate in-app purchases, and to provide app-specific performance metrics.",
         technologies: ['React', 'NodeJS', 'Docker', 'Typescript', 'Express', 'Material-UI', 'Redux', 'Redux-Saga', 'SASS'],
-        about: `This application had an important team element to it. Even though I owned the 
-        development process, I got to work with the marketing team, the app development team, 
-        and another developer to solve problems and execute the requirements. 
-        `,
+        about: `I owned the development process from start to finish. The main thing I learned after creating this app are the tradeoffs between NoSQL and SQL databases. Looking back, the development process was quicker because of 
+        my existing knowledge of MongoDB, but I realized after the project was done that the type of data and use case probably demanded an SQL database, since they can work better with complex queries. The end result executed all requirements, but was not as performant as it could have been. The fast paced environment I was in did
+        not allow for optimization since newer projects took priority.`,
         about2: `Working with so many teams gave me an expanded understanding
-        of the mindsets of each team, and how to better communicate as a web developer. I also gained insight into mobile development world. Typescript once again came in very handy
-        for the frontend.`,
+        of the mindsets of each team, and how to better communicate as a web developer. I also gained insight into mobile development world. Typescript once again came in very handy in my development workflow.`,
         gitLinkFrontend: "https://github.com/jasoncarrillo0/purchasesApp",
         gitLinkBackend: "https://github.com/jasoncarrillo0/purchasesApp"
     }

@@ -3,6 +3,7 @@ import Document, { Html, Head, Main, NextScript } from 'next/document';
 import createEmotionServer from '@emotion/server/create-instance';
 import { createEmotionCache, theme } from '../utils/constants';
 
+
 export default class MyDocument extends Document {
   render() {
     return (
@@ -10,8 +11,7 @@ export default class MyDocument extends Document {
         <Head>
           {/* PWA primary color */}
           <meta name="theme-color" content={theme.palette.primary.main} />
-          <link rel="shortcut icon" href="/favicon.ico" />
-          
+          <meta name="description" content="My portolio site."/>
           <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet"/>
           <meta name="emotion-insertion-point" content="" />
           {(this.props).emotionStyleTags}

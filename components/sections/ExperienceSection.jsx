@@ -11,18 +11,18 @@ import { SCROLL_ELEMENT_NAMES } from '../../utils/constants';
 const jobs = [
     {
         company: "Techlab FZE",
-        dates: "April 2021 - Present",
-        description: "Full-stack developer; managed two projects from start to finish, collaborated across teams, trained developers, managed multiple AWS EC2 instances, and maintained a docker network."
+        dates: "April 2021 - October 2022",
+        description: "Full-stack developer; managed 3 projects from start to finish. Tripled A/B test frequency, increased ad revenue by 20%, and cut developer costs by 4% by building Typescript apps."
     },
     {
         company: "Eternal-I Software Solutions",
         dates: "July 2020 - June 2021",
-        description: "Full-stack developer; worked directly with a steel manufacturing client to build a CAD file quoting application. Also managed Wordpress hosting servers, and setup 3 Wordpress sites."
+        description: "Full-stack developer; worked directly with a steel manufacturing client to build a CAD file quoting application and reduced their quoting process from days to seconds. I also deployed 3 production level sites for small businesses."
     },
     {
         company: "Personal Development",
         dates: "Jan. 2020 - Present",
-        description: "150+ hours teaching myself full-stack development. I've deployed more than 5 projects, built a spotify search app, and built an e-commerce store, and learned SQL."
+        description: "150+ hours teaching myself full-stack development."
     },
     {
         company: "Techspring Partners",
@@ -32,7 +32,7 @@ const jobs = [
     {
         company: "Internet Marketing Factors, Inc.",
         dates: "Jan. 2017 - March 2017",
-        description: "Built a web app with Python/Flask that automated a data entry task, grabbed data from semrush.com's API, and output valuable marketing data."
+        description: "Built a web app with Python/Flask that eliminated a 20 hour data entry task by grabbing data from semrush.com's API, performing calculations, and inserting it into an excel sheet."
     }
 ]
 

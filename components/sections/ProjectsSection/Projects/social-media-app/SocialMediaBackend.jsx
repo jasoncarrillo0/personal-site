@@ -7,17 +7,18 @@ import bgCodeImg from '../../../../../public/proj-bg.jpg';
 import ProjectModal from '../ProjectModal';
 import Image from 'next/image';
 
-const NaggiarProject = ({ title, summary }) => {
+const SocialMediaBackend = ({ title, summary }) => {
     const [open, setOpen] = useState(false);
     const data = {
-        title: "CAD File Quoting App",
-        frontendInfo: 'Features: CAD file uploader, custom CMS panel for quoting formulas and site content, "edit" mode for editing and sanitizing site content with wysiwyg editors, cart functionality, etc.',
-        backendInfo: "The backend was an Express server deployed on Digital Ocean, along with the frontend. It stored sanitized html, sent dynamic emails, and grabbed data from Autodesk's Model Derivative API.",
-        purpose: "This client needed a frontend e-commerce app to allow a user to upload their CAD file, and receive an instant quote for a laser-cut of the CAD file. They also needed to customize the site content and quoting formulas through an admin panel.",
-        technologies: ['React', 'NodeJS', 'Express', 'MonogDB', 'Semantic-UI', 'Redux', 'Redux-Saga', 'SASS'],
-        about: `As the only developer on this project, everything was up to me to get it built. I navigated changing client requirements, and maintained an "agile" attitude towards the project. It was my first time getting to use emails in Node, so it was fun getting to put together all the e-commerce functionalities.`,
-        about2: `I grew as a developer by noticing something about
-        noticing something about myself I hadn't noticed: I don't like to leave a task unfinished. I noticed this as a weakness (and a strength), because it would prevent me from juggling multiple areas of the project at once, which I noticed slowed the process down. I then made intentional steps to overcome this weakness.`,
+        title: "Backend for a Social Media App",
+        frontendInfo: 'For the dev process I created a utility helper to test push notifications and login workflows.',
+        backendInfo: "The backend was deployed on Firebase, and all logic is handled with Cloud Functions. It includes features such as automatic push notifications, image uploading, and user authentication.",
+        purpose: "The core of this phone app is the backend. We needed something that integrated well with Firebase but could also provide generous free usage tiers and automatic scaling. Firebase was perfect.",
+        technologies: ['Express', 'Typescript', 'Firebase'],
+        about: `Getting familiar with Google Cloud Platform was truly an enjoyable experience. I really like GCP and the UI setup. Much better than AWS in my opinion. Diving deep into serverless architecture was an amazing learning experience.`,
+        about2: `Firebase functions was a great way to get the MVP shipped fast. While not a long term solution, we needed a proof of concept before investing time and money in optimal solutions. I built the backend resulting in 5000+ users in the first month.
+        After the backend was up and running, I left the company. So I didn't have the chance to optimize the project. Firestore is a NoSQL database with fairly limited functionality compared to other NoSQL databases. Perhaps a better optimization is using an SQL 
+        database or even a graph-based database, such as Neo4j; these would better serve a large scale social media platform.`,
     }
 
     return (
@@ -56,4 +57,4 @@ const NaggiarProject = ({ title, summary }) => {
     );
 };
 
-export default NaggiarProject;
+export default SocialMediaBackend;

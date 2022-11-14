@@ -75,11 +75,12 @@
         left: -7px;
         background-position: center;
         z-index: 999;
+        
+        
 
-
-        @media screen and (max-width: $iphone-se) {
+        @media screen and (max-width: $large-laptop) {
             bottom: -5px;
-            
+            left: 0px;
         }
     }
 }
