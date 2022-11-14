@@ -28,14 +28,13 @@ const Motivation = () => {
                     <div className={s.textArea} style={oldSafari && width > 768 ? { marginLeft: '3rem'} : {}}>
                         <MotivationTitle/>
                         <p>
-                            Simply put, I love to build things from the ground up! I enjoy the satisfaction of imagining something, and materializing it.
+                            Simply put, I love to build things that make a measurable difference, particularly on systems. I enjoy the satisfaction of achieving measurable improvement.
                             On top of that, I gain a sense of satisfaction knowing what I'm building genuinely helps people, whether its an internal company web app,
                             or a customer-facing application. I'm a people person, so working with and serving people is a motivator for me.
                         </p>
                         <p>
-                            I also have an entrepreneurial spirit, so I know that what I'm building and the skills I get to use can be used to build projects that earn side income,
-                            and that possibility excites me. I would love the opportunity to find a market need, meet it, and make some extra income while I'm at it. The experience and process
-                            in and of itself can provide valuable knowledge.
+                            I'm very excited about systems design opportunities. This is an area I want to break into, and to get the chance to manage large scale systems would be amazing. I want to make
+                            a large impact, but I also really enjoy optimizing things.
                         </p>
                     </div>
                 </div>

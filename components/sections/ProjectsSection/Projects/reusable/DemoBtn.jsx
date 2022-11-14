@@ -50,7 +50,7 @@ const DemoBtn = ({ link }) => {
         return (
             <Button 
                 size="small"
-                className={wrap}
+                className={s.wrap}
                 href={link}
                 variant="contained" 
                 endIcon={<TransitEnterexitIcon sx={{transform: 'scale(-1, -1)'}}/>}

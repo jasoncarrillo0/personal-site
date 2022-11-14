@@ -7,19 +7,15 @@ import bgCodeImg from '../../../../../public/proj-bg.jpg';
 import ProjectModal from '../ProjectModal';
 import Image from 'next/image';
 
-const AbTestProject = ({ title, summary }) => {
+const CrudTablesApp = ({ title, summary }) => {
     const [open, setOpen] = useState(false);
     const data = {
-        title: "A/B Test Collaboration Portal",
-        frontendInfo: "The front end includes interactive data grids, a/b tests and designs forms with image uploading, data visualization components.",
-        backendInfo: "I used a dockerized Typescript Express server and MongoDB to store/collect ab test performance, upload assets to an AWS S3 bucket, and integrate with the Unity API for A/B test deployment.",
-        purpose: "The marketing team needed a centralized platform to quickly share and update their a/b tests on iOS and Android applications.",
-        technologies: ['React', 'NodeJS', 'Docker', 'Typescript', 'Express', 'Material-UI', 'Redux', 'Redux-Saga', 'SASS'],
-        about: `As the only developer on this project, I designed and built everything. It was a genuine pleasure! TypeScript once again provided a wonderful dev experience.
-        I was really happy that this app tripled productivity and resulted in a 20% increase in ad revenue, and even cut developer costs by 4%. I love those metrics! 
-        `,
-        gitLinkFrontend: "https://github.com/jasoncarrillo0/abTestApp",
-        gitLinkBackend: "https://github.com/jasoncarrillo0/abTestApp",
+        title: "Dynamic Table Generator App",
+        frontendInfo: "Frontend includes features such datatables, a custom table generator component, a UI for creating any type of editable table you want, and a global search bar for any text within saved table data.",
+        backendInfo: "The backend is a NodeJS/Express app deployed on a linux server, and uses MongoDB with full-text search functionality and api routes for table creation and table data.",
+        purpose: "My friend needed a custom built app for his IT business. The core of the app is the ability to create dynamic tables with CRUD functionality for particular properties he services.",
+        technologies: ['React', 'Redux', 'TypeScript', 'NodeJS', 'MongoDB', 'SASS', 'MUI'],
+        about: `I've always enjoyed using MUI. Its data table component is especially useful and was perfect for CRUD functionality.`
     }
 
     return (
@@ -43,10 +39,10 @@ const AbTestProject = ({ title, summary }) => {
             />
 
             <CardContent className={s.cardContent}>
-                <Typography gutterBottom variant="h5" component="div">
+                <Typography className={s.titleClass} gutterBottom variant="h5" component="div">
                     {title}
                 </Typography>
-                <Typography variant="body2" color="text.secondary">
+                <Typography className={s.desc} variant="body2" color="text.secondary">
                     {summary}
                 </Typography>
             </CardContent>
@@ -58,4 +54,4 @@ const AbTestProject = ({ title, summary }) => {
     );
 };
 
-export default AbTestProject;
+export default CrudTablesApp;

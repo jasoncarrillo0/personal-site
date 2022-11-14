@@ -91,7 +91,9 @@
         background: $project-card-bg;
         height: 40%;
 
-
+        a {
+            color: unset;
+        }
 
         .titleClass {
             @media screen and (min-width: $imac) {

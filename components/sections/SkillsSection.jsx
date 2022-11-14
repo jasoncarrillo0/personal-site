@@ -15,6 +15,8 @@ import wordpress from '../../public/skills/wordpress-logo.png';
 import typescript from '../../public/skills/typescript-logo.png';
 import mui from '../../public/skills/mui-logo.png';
 import semantic from '../../public/skills/semantic-ui-logo.png';
+import redis from '../../public/skills/redis_logo.svg';
+import gcp from '../../public/skills/gcp_logo.png';
 import sql from '../../public/skills/sql-logo.png';
 import Skill from './SkillsSection/Skill';
 import ExperienceTitle from './ExperienceSection/ExperienceTitle';
@@ -32,11 +34,11 @@ const skills = [
     { "SASS": sass },
     { "Responsive Design": responsive },
     { "Material-UI": mui},
-    { "Semantic-UI": semantic },
+    { "Google Cloud Platform": gcp },
     { "Amazon Web Services": aws },
     { "Docker": docker },
     { "SQL": sql},
-    { "Wordpress": wordpress }
+    { "Redis": redis }
 ];
 
 
