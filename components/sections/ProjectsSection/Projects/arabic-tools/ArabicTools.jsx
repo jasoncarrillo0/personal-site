@@ -48,6 +48,7 @@ const ArabicToolsApp = ({ title, summary }) => {
                 <Typography className={s.titleClass} gutterBottom variant="h5" component="div">
                     {title}
                 </Typography>
+                
                 <Typography className={s.desc} variant="body2" color="text.secondary">
                     {summary}
                 </Typography>

@@ -7,7 +7,7 @@ import bgCodeImg from '../../../../../public/proj-bg.jpg';
 import ProjectModal from '../ProjectModal';
 import Image from 'next/image';
 
-const AbTestProject = ({ title, summary }) => {
+const AbTestProject = ({ title, summary, impact="" }) => {
     const [open, setOpen] = useState(false);
     const data = {
         title: "A/B Test Collaboration Portal",
@@ -46,6 +46,7 @@ const AbTestProject = ({ title, summary }) => {
                 <Typography gutterBottom variant="h5" component="div">
                     {title}
                 </Typography>
+                <div className={s.impact}>Impact: {impact}</div>
                 <Typography variant="body2" color="text.secondary">
                     {summary}
                 </Typography>

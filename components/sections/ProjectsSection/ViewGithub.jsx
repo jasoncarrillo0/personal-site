@@ -8,7 +8,7 @@ const ViewGithub = () => {
         <div className={s.topLevelWrap} style={{marginTop: '10rem'}}>
             <div className={s.wrap} style={{flexDirection: 'column', padding: '2rem 0'}}>
                 <h2 style={{marginTop: '0'}}>VIEW OTHER PROJECTS</h2>
-                <Button variant="outlined" size="large" href="https://github.com/jasoncarrillo0?tab=repositories" target="_blank" endIcon={<GitHubIcon/>}>View Github Profile</Button>
+                <Button variant="outlined" size="large" href="https://github.com/jasoncarrillo0" target="_blank" endIcon={<GitHubIcon/>}>Github Profile</Button>
             </div>
         </div>
     );

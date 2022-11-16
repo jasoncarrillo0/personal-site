@@ -12,7 +12,7 @@ const jobs = [
     {
         company: "Techlab FZE",
         dates: "April 2021 - October 2022",
-        description: "Full-stack developer; managed 3 projects from start to finish. Tripled A/B test frequency, increased ad revenue by 20%, and cut developer costs by 4% by building Typescript apps."
+        description: "Full-stack developer; managed 3 projects from start to finish. Tripled A/B test frequency, increased ad revenue by 20%, and cut developer costs by 4% by owning and deploying Typescript apps to GCP and AWS."
     },
     {
         company: "Eternal-I Software Solutions",
@@ -22,7 +22,7 @@ const jobs = [
     {
         company: "Personal Development",
         dates: "Jan. 2020 - Present",
-        description: "150+ hours teaching myself full-stack development."
+        description: "300+ hours teaching myself full-stack development, increasing algorithmic skill through coding interview questions, and learning Systems Design."
     },
     {
         company: "Techspring Partners",

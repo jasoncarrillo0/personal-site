@@ -7,7 +7,7 @@ import bgCodeImg from '../../../../../public/proj-bg.jpg';
 import ProjectModal from '../ProjectModal';
 import Image from 'next/image';
 
-const SocialMediaBackend = ({ title, summary }) => {
+const SocialMediaBackend = ({ title, summary, impact="" }) => {
     const [open, setOpen] = useState(false);
     const data = {
         title: "Backend for a Social Media App",
@@ -45,6 +45,7 @@ const SocialMediaBackend = ({ title, summary }) => {
                 <Typography gutterBottom variant="h5" component="div">
                     {title}
                 </Typography>
+                <div className={s.impact}>Impact: {impact}</div>
                 <Typography variant="body2" color="text.secondary">
                     {summary}
                 </Typography>

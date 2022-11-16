@@ -7,7 +7,7 @@ import bgCodeImg from '../../../../../public/proj-bg.jpg';
 import ProjectModal from '../ProjectModal';
 import Image from 'next/image';
 
-const CrudTablesApp = ({ title, summary }) => {
+const CrudTablesApp = ({ title, summary, impact="" }) => {
     const [open, setOpen] = useState(false);
     const data = {
         title: "Dynamic Table Generator App",
@@ -15,7 +15,8 @@ const CrudTablesApp = ({ title, summary }) => {
         backendInfo: "The backend is a NodeJS/Express app deployed on a linux server, and uses MongoDB with full-text search functionality and api routes for table creation and table data.",
         purpose: "My friend needed a custom built app for his IT business. The core of the app is the ability to create dynamic tables with CRUD functionality for particular properties he services.",
         technologies: ['React', 'Redux', 'TypeScript', 'NodeJS', 'MongoDB', 'SASS', 'MUI'],
-        about: `I've always enjoyed using MUI. Its data table component is especially useful and was perfect for CRUD functionality.`
+        about: `I've always enjoyed using MUI. Its data table component is especially useful and was perfect for CRUD functionality.`,
+        ytLink: "https://youtu.be/0o2jBRSFIoM"
     }
 
     return (
@@ -42,6 +43,7 @@ const CrudTablesApp = ({ title, summary }) => {
                 <Typography className={s.titleClass} gutterBottom variant="h5" component="div">
                     {title}
                 </Typography>
+                <div className={s.impact}>Impact: {impact}</div>
                 <Typography className={s.desc} variant="body2" color="text.secondary">
                     {summary}
                 </Typography>

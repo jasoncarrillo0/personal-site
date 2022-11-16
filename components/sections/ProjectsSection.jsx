@@ -13,26 +13,31 @@ import { SCROLL_ELEMENT_NAMES } from '../../utils/constants';
 import SocialMediaBackend from './ProjectsSection/Projects/social-media-app/SocialMediaBackend';
 import CrudTablesApp from './ProjectsSection/Projects/crud-tables-app/CrudTablesApp';
 import ArabicToolsApp from './ProjectsSection/Projects/arabic-tools/ArabicTools';
+import RealEstateOverviewProject from './ProjectsSection/Projects/real-estate-overview/RealEstateOverviewApp';
 const projects = {
     abtests: {
         title: "A/B Test Collaboration Tool",
-        summary: "Full-stack app to create a/b test projects, designs, rank designs, and visualize a/b test performance.",
+        impact: "20% boost in ad revenue.",
+        summary: "Full-stack app to create/launch A/B tests, upload designs, rank designs, and visualize A/B test performance.",
     },
     customerDataProj: {
         title: "Marketing Data Tool",
+        impact: "Validates 1000s of in-app purchases everyday.",
         summary: "Full-stack app to validate/wrangle in-app-purchase data, find insights, and present data in dynamic data tables to the CEO and CTO."
     },
     socialMediaProj: {
-        title: "5000+ User Social Media Backend",
+        title: "Social Media Backend",
+        impact: "5000+ users within the first month.",
         summary: "Backend for a social media application using Firebase and cloud functions, GCP's serverless function offering."
     },
     naggiarProj: {
         title: "CAD File Quoting App for a Steel Company",
+        impact: "Quoting process reduced from days to seconds.",
         summary: "Full-stack app to quote customer's CAD files for laser-cuts, also with a custom-built CMS."
     },
     crwnClothingProj: {
         title: "E-Commerce Clothing Storefront",
-        summary: "Full-stack app with clothing categories, stripe integration, login with google, and a firebase backend."
+        summary: "My first React project! Full-stack app with clothing categories, stripe integration, login with google, and a firebase backend."
     },
     wordPressSites: {
         title: "Wordpress Sites for Clients",
@@ -43,12 +48,18 @@ const projects = {
         summary: "A basic app to login to spotify and search artists and albums, with the infinite scroll effect."
     },
     crudTablesApp: {
-        title: "Dynamic CRUD Tables App for an IT Business",
-        summary: "Full stack web app that enables a user to create custom tables for specific properties serviced by the business."
+        title: "Dynamic CRUD Tables App",
+        impact: "Decreased data search time from 5 minutes to seconds.",
+        summary: "Full stack web app for an IT business that enables a user to create custom tables for specific properties serviced by the business."
     },
     arabicToolsApp: {
         title: "Language Learning Tool (Arabic)",
         summary: <>A web app with an optimized learning structure for arabic grammar, inspired by the {<a href="https://supermemo.com/en/archives1990-2015/articles/20rules" target="_blank" rel="noopener noreferrer">The 20 Rules for Formulating Knowledge.</a>}</>
+    },
+    realEstateApp: {
+        title: "Real Estate Market Overview Generator",
+        impact: "Generates market data for nearly every US county/city.",
+        summary: "NextJS app to help me analyze markets to invest in. Integrates with the Census Bureau API, and Google APIs."
     }
 };
 const ProjectsSection = () => {
@@ -62,12 +73,11 @@ const ProjectsSection = () => {
                     <SocialMediaBackend {...projects.socialMediaProj}/>
                     <AbTestProject {...projects.abtests}/> 
                     <CustomerDataProject {...projects.customerDataProj}/>
-                    <NaggiarProject {...projects.naggiarProj}/>
                     <CrudTablesApp {...projects.crudTablesApp}/>
+                    <NaggiarProject {...projects.naggiarProj}/>
+                    <RealEstateOverviewProject {...projects.realEstateApp}/>
                     <ArabicToolsApp {...projects.arabicToolsApp}/>
-                    {/* <WordPressSites {...projects.wordPressSites}/>
                     <CrwnClothingProject {...projects.crwnClothingProj}/>
-                    <SpotifySearchApp {...projects.spotifySearchApp}/> */}
                 </div>
                 <ViewGithub/>
             </section>

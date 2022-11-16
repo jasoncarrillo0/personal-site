@@ -20,7 +20,7 @@
 
     .projectsWrap {
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
         justify-items:center;
         gap: 2rem;
         grid-gap: 2rem;
@@ -38,11 +38,12 @@
 
         @media screen and (max-width: $small-laptop) {
             margin: 0 2rem;
+            grid-template-columns: 1fr 1fr 1fr;
         }
 
         @media screen and (max-width: ($small-laptop - 1px)) {
+            margin: 0 4rem;
             grid-template-columns: 1fr 1fr;
-            margin: 0 8rem;
 
         }
 
@@ -54,6 +55,10 @@
         @media screen and (max-width: $large-phone) {
             grid-template-columns: 1fr;
             margin: 0 2rem;
+        }
+
+        @media screen and (max-width: $iphone-se) {
+            margin: 0 5px;
         }
     }
 }

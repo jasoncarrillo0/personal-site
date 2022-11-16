@@ -2,30 +2,30 @@
 
 .wrap {
     width: 300px;
-    height: 410px;
+    height: 450px;
     position: relative;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    @media screen and (min-width: $imac) {
-        width: 336px;
-        height: 455px;
-    }
+    // @media screen and (min-width: $imac) {
+    //     width: 336px;
+    //     height: 450px;
+    // }
 
-    @media screen and (max-width: $small-laptop) {
-        width: 275px;
-        height: 385px;
-    }
+    // @media screen and (max-width: $small-laptop) {
+    //     width: 275px;
+    //     height: 450px;
+    // }
 
-    @media screen and (max-width: $iphone-se) {
-        width: 250px;
-    }
+    // @media screen and (max-width: $iphone-se) {
+    //     width: 450px;
+    // }
     
 
     .topCardWrap {
 
         position: relative;
-        height: 50%;
+        height: 44%;
 
         
 
@@ -89,12 +89,18 @@
 
     .cardContent {
         background: $project-card-bg;
-        height: 40%;
+        height: 50%;
 
         a {
             color: unset;
         }
 
+        .impact {
+            
+            margin-bottom: 0.5rem;
+            font-style: italic;
+            font-weight: bold;
+        }
         .titleClass {
             @media screen and (min-width: $imac) {
                 font-size: 28px;
@@ -114,7 +120,7 @@
         background: $project-card-bg;
 
         @media screen and (min-width: $imac) {
-            padding: 12px;
+            padding: 10px;
         }
     }
 }

@@ -2,7 +2,8 @@
 .wrap {
     background: #1c1c1c;
     overflow: hidden;
-    
+    margin-top: 4rem;
+
 
     h1 {
         color: rgb(226, 226, 226);
@@ -24,7 +25,7 @@
         @media screen and (max-width: $small-laptop) and (min-width: $small-laptop) {
             width: 100%;
         }
-        @media screen and (max-width: $small-laptop - 1) {
+        @media screen and (max-width: ($small-laptop - 1)) {
             align-items: flex-start;
         }
 

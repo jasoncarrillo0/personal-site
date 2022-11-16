@@ -5,8 +5,8 @@ const Greeting = () => {
     return (
         <div className={s.wrap}>
             <h1 className={s.title}>Hi, I'm Jason</h1>
-            <p className={s.punchline}>Full Stack Web Developer.</p>
-            <p className={s.punchline}>I love building things. Let's build together!</p>
+            <p className={s.punchline}>Full Stack Web Developer</p>
+            <p className={s.punchline}>Boosting the bottom line through high-quality software.</p>
         </div>
     );
 };

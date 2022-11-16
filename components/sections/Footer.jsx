@@ -16,7 +16,7 @@ const Footer = () => {
                 <IconButton href="https://www.linkedin.com/in/jason-carrillo/" target="_blank" sx={btnStyle}>
                     <LinkedInIcon/>
                 </IconButton>
-                <IconButton href="https://github.com/jasoncarrillo0?tab=repositories" target="_blank" sx={btnStyle}>
+                <IconButton href="https://github.com/jasoncarrillo0" target="_blank" sx={btnStyle}>
                     <GitHubIcon/>
                 </IconButton>
 
