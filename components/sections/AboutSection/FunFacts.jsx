@@ -27,7 +27,7 @@ const FunFacts = () => {
                     <p>
                         <ul style={{direction: 'rtl', paddingInlineStart: '20px'}}>
                             <li>I'm married to my beautiful wife Layal</li>
-                            <li>I've lived overseas for more than 3 years</li>
+                            <li>I lived overseas for more than 3 years</li>
                             <li>I'm a voracious reader</li>
                             <li>I'm a classical pianist</li>
                             <li>I love playing football (soccer, if you're American)</li>

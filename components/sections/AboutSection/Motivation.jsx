@@ -29,12 +29,12 @@ const Motivation = () => {
                         <MotivationTitle/>
                         <p>
                             Simply put, I love to build things that make a measurable difference, particularly on systems. I enjoy the satisfaction of achieving measurable improvement.
-                            On top of that, I gain a sense of satisfaction knowing what I'm building genuinely helps people, whether its an internal company web app,
+                            On top of that, I gain a sense of accomplishment knowing what I'm building genuinely helps people, whether its an internal company web app,
                             or a customer-facing application. I'm a people person, so working with and serving people is a motivator for me.
                         </p>
                         <p>
-                            I'm very excited about systems design opportunities. This is an area I want to break into, and to get the chance to manage large scale systems would be amazing. I want to make
-                            a large impact, but I also really enjoy optimizing things.
+                            I'm very excited about systems design opportunities. This is an area I want to break into, and I would love the chance to manage large scale systems. I want to make
+                            a large impact, but I also really enjoy optimizing things, and looking at data proving my optimizations.
                         </p>
                     </div>
                 </div>

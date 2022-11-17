@@ -18,12 +18,12 @@ const projects = {
     abtests: {
         title: "A/B Test Collaboration Tool",
         impact: "20% boost in ad revenue.",
-        summary: "Full-stack app to create/launch A/B tests, upload designs, rank designs, and visualize A/B test performance.",
+        summary: "Full-stack web app to create/launch A/B tests, upload designs, rank designs, and visualize A/B test performance.",
     },
     customerDataProj: {
         title: "Marketing Data Tool",
         impact: "Validates 1000s of in-app purchases everyday.",
-        summary: "Full-stack app to validate/wrangle in-app-purchase data, find insights, and present data in dynamic data tables to the CEO and CTO."
+        summary: "Full-stack web app to validate/wrangle in-app-purchase data, find insights, and present data in dynamic data tables to the CEO and CTO."
     },
     socialMediaProj: {
         title: "Social Media Backend",
@@ -33,7 +33,7 @@ const projects = {
     naggiarProj: {
         title: "CAD File Quoting App for a Steel Company",
         impact: "Quoting process reduced from days to seconds.",
-        summary: "Full-stack app to quote customer's CAD files for laser-cuts, also with a custom-built CMS."
+        summary: "Full-stack web app to quote CAD files for laser-cuts, also with a custom-built CMS."
     },
     crwnClothingProj: {
         title: "E-Commerce Clothing Storefront",
@@ -50,7 +50,7 @@ const projects = {
     crudTablesApp: {
         title: "Dynamic CRUD Tables App",
         impact: "Decreased data search time from 5 minutes to seconds.",
-        summary: "Full stack web app for an IT business that enables a user to create custom tables for specific properties serviced by the business."
+        summary: "Full-stack web app for an IT business that enables a user to create custom tables for specific properties serviced by the business."
     },
     arabicToolsApp: {
         title: "Language Learning Tool (Arabic)",
@@ -59,7 +59,7 @@ const projects = {
     realEstateApp: {
         title: "Real Estate Market Overview Generator",
         impact: "Generates market data for nearly every US county/city.",
-        summary: "NextJS app to help me analyze markets to invest in. Integrates with the Census Bureau API, and Google APIs."
+        summary: "NextJS web app to help me analyze markets to invest in. Integrates with the US Census Bureau API, and Google APIs."
     }
 };
 const ProjectsSection = () => {

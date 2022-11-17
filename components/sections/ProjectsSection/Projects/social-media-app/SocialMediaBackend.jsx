@@ -13,11 +13,11 @@ const SocialMediaBackend = ({ title, summary, impact="" }) => {
         title: "Backend for a Social Media App",
         frontendInfo: 'For the dev process I created a utility helper to test push notifications and login workflows.',
         backendInfo: "The backend was deployed on Firebase, and all logic is handled with Cloud Functions. It includes features such as automatic push notifications, image uploading, and user authentication.",
-        purpose: "The core of this phone app is the backend. We needed something that integrated well with Firebase but could also provide generous free usage tiers and automatic scaling. Firebase was perfect.",
+        purpose: "The core of this social media app is the backend. We needed something that integrated well with Firebase but could also provide generous free usage tiers and automatic scaling to get an MVP done fast. Firebase was perfect.",
         technologies: ['Express', 'Typescript', 'Firebase'],
         about: `Getting familiar with Google Cloud Platform was truly an enjoyable experience. I really like GCP and the UI setup. Much better than AWS in my opinion. Diving deep into serverless architecture was an amazing learning experience.`,
-        about2: `Firebase functions was a great way to get the MVP shipped fast. While not a long term solution, we needed a proof of concept before investing time and money in optimal solutions. I built the backend resulting in 5000+ users in the first month.
-        After the backend was up and running, I left the company. So I didn't have the chance to optimize the project. Firestore is a NoSQL database with fairly limited functionality compared to other NoSQL databases. Perhaps a better optimization is using an SQL 
+        about2: `Firebase functions was a great way to get the MVP shipped fast. While not a long term solution, we needed a proof of concept before investing time and money in the best possible solution. I built the backend resulting in 5000+ users in the first month.
+        After the backend was up and running, I transitioned out of the company, so I didn't have the chance to optimize the project. Firestore is a NoSQL database with fairly limited functionality compared to other NoSQL databases. Perhaps a better optimization is using an SQL 
         database or even a graph-based database, such as Neo4j; these would better serve a large scale social media platform.`,
     }
 
