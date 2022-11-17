@@ -17,7 +17,7 @@ const CrudTablesApp = ({ title, summary, impact="" }) => {
         technologies: ['React', 'Redux', 'TypeScript', 'NodeJS', 'MongoDB', 'SASS', 'MUI'],
         about: `This project further expanded my knowledge of the tech I used, particularly how easy it is to implement a full-text search in MongoDB. What was even more satsifying than building this project, were the text messages I received from my friend. Things like "This saves me so much time", and, "The other day I needed to pull up client information in the middle of traffic, and it took seconds. This is next-level!" drove the point home: custom software is powerful.`,
         about2: "It's easy to get caught up in your head when working on complex problems, and the development process. It's always a good reminder to keep in mind how much impact the seemingly mundane aspects of coding will have on someone's wellbeing.",
-        ytLink: "https://youtu.be/0o2jBRSFIoM"
+        ytLink: "https://youtu.be/dXCroNqJl34"
     }
 
     return (
