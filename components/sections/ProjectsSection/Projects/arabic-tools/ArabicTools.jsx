@@ -15,10 +15,10 @@ const ArabicToolsApp = ({ title, summary }) => {
         backendInfo: "I used Firebase for the backend to handle user management and vocab data.",
         purpose: "I built this app to optimize my Arabic studies and solve problems created by grammar practice resources.",
         technologies: ['React', 'Redux', 'Firebase', 'SASS'],
-        about: `I realized that resources available for grammar practice utilize vocabulary from seemingly random sets that aren't centralized. This greatly increases the "pattern interrupt" when trying to simply practice grammatical concepts: while trying to learn a grammatical concept, I also have to learn the new word. This is not optimized learning. 
-        Instead, grammar practice should come from words I already know, instead of two things at a time. Our brains are designed to process one thing at a time. On top of that, pattern interrupt decreases motivation to practice.`,
+        about: `I realized that resources available for grammar practice utilize vocabulary from seemingly random sets that aren't centralized. This greatly increases pattern interrupt when trying to practice grammatical concepts - while trying to learn a grammatical concept, I also have to learn the new word. This is not optimized learning. 
+        Instead, grammar practice should utilize I already know, instead of practicing grammar on a word I dont know. Our brains are designed to process one thing at a time. On top of that, pattern interrupt decreases motivation to practice.`,
         about2: `I solved this issue by creating an app that limits sentence (grammar) practice to a limited set of vocabulary. An auth user can also balance vocab usage for practice sentences by seeing how many times a particular vocab word has 
-        been used in other practice sentences; this further enforces the limited set principle thereby reducing the "pattern interrupt". Also, anytime I need to add or remove vocabulary I can. I can also have a friend or Arabic teacher easily add sentences that I can practice.`,
+        been used in other practice sentences; this further enforces the limited set principle thereby reducing pattern interrupt. Also, anytime I need to add or remove vocabulary I can. I can also have a friend or Arabic teacher easily add sentences that I can practice.`,
         ytLink: "https://youtu.be/VjvJABT3ahg",
         gitLinkFrontend: "https://github.com/jasoncarrillo0/arabic-tools",
         gitLinkBackend: "https://github.com/jasoncarrillo0/arabic-tools"

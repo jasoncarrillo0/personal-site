@@ -13,7 +13,7 @@ const AbTestProject = ({ title, summary, impact="" }) => {
         title: "A/B Test Collaboration Portal",
         frontendInfo: "The front end includes interactive data grids, A/B test and design forms with image uploading, and data visualization components.",
         backendInfo: "I used a dockerized Typescript Express server and MongoDB to store/collect ab test performance, upload assets to an AWS S3 bucket, and integrate with the Unity API for A/B test deployment.",
-        purpose: "The marketing team needed a centralized platform to quickly share and update their A/B tests existing Android applications with tens of thousands of users.",
+        purpose: "The marketing team needed a centralized platform to quickly share and update their A/B tests running on existing Android applications with tens of thousands of users.",
         technologies: ['React', 'NodeJS', 'Docker', 'Typescript', 'Express', 'Material-UI', 'Redux', 'Redux-Saga', 'SASS'],
         about: `As the only developer on this project, I designed and built everything. It was a genuine pleasure! TypeScript once again provided a wonderful dev experience.
         I was really happy that this app tripled productivity and resulted in a 20% increase in ad revenue, and even cut developer costs by 4%. I love those metrics! 

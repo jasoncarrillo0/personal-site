@@ -28,13 +28,12 @@ const Motivation = () => {
                     <div className={s.textArea} style={oldSafari && width > 768 ? { marginLeft: '3rem'} : {}}>
                         <MotivationTitle/>
                         <p>
-                            Simply put, I love to build things that make a measurable difference, particularly on systems. I enjoy the satisfaction of achieving measurable improvement.
+                            Simply put, I love to build things that make a measurable difference. The achiever in me finds huge satisfaction in performance optimization.
                             On top of that, I gain a sense of accomplishment knowing what I'm building genuinely helps people, whether its an internal company web app,
                             or a customer-facing application. I'm a people person, so working with and serving people is a motivator for me.
                         </p>
                         <p>
-                            I'm very excited about systems design opportunities. This is an area I want to break into, and I would love the chance to manage large scale systems. I want to make
-                            a large impact, but I also really enjoy optimizing things, and looking at data proving my optimizations.
+                            I'm most excited about working with distributed systems. This is the next area I want to break into, especially using industry standard tools like Apache Kafka and Kubernetes.
                         </p>
                     </div>
                 </div>

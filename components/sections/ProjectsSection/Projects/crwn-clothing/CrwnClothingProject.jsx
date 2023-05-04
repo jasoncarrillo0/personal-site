@@ -12,7 +12,7 @@ const CrwnClothingProject = ({ title, summary }) => {
     const data = {
         title: "CRWN Clothing",
         frontendInfo: "Frontend is a clothing store with a cart, checkout, login with google, and a normal login.",
-        backendInfo: "I used Firebase for the backend to handle user login and data. Firebase did most of the the heavy lifting for me. I then used Heroku to push it online.",
+        backendInfo: "I used Firebase for the backend to handle user login and data. Firebase did most of the the heavy lifting for me. I used Heroku because of its free deployment option.",
         purpose: "I built this to grow my React and Redux skills.",
         technologies: ['React', 'Redux', 'Firebase', 'Redux-Saga', 'SASS', 'Stripe Checkout'],
         about: `This project is how I learned Redux and the problems it solves. I built this project through a course, customized it to make it my own, and I got hands on experience with Heroku. It was quite challenging as a beginner in React, but this course launched me forward in my career.`,

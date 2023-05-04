@@ -10,9 +10,9 @@ import { SCROLL_ELEMENT_NAMES } from '../../utils/constants';
 
 const jobs = [
     {
-        company: "Techlab FZE",
+        company: "Supono Holdings LTD",
         dates: "April 2021 - October 2022",
-        description: "Full-stack developer; managed 3 projects from start to finish. Tripled A/B test frequency, increased ad revenue by 20%, and cut developer costs by 4% by owning and deploying Typescript apps to GCP and AWS."
+        description: "Full-stack developer; owned, built, and deployed 3 projects from start to finish to AWS and GCP. Added 5000+ users to an app, tripled A/B test frequency, increased ad revenue by 20%, and cut developer costs by 5%."
     },
     {
         company: "Eternal-I Software Solutions",
@@ -22,7 +22,7 @@ const jobs = [
     {
         company: "Personal Development",
         dates: "Jan. 2020 - Present",
-        description: "300+ hours teaching myself full-stack development, increasing algorithmic skill through coding interview questions, and learning Systems Design."
+        description: "300+ hours teaching myself full-stack development, increasing data structures and algorithms skills through coding interview questions, and learning systems design from ex-Google employees."
     },
     {
         company: "Techspring Partners",
@@ -32,7 +32,7 @@ const jobs = [
     {
         company: "Internet Marketing Factors, Inc.",
         dates: "Jan. 2017 - March 2017",
-        description: "Built a web app with Python/Flask that eliminated a 20 hour data entry task by grabbing data from semrush.com's API, performing calculations, and inserting it into an excel sheet."
+        description: "Built a web app with Python/Flask that eliminated a 20 hour data entry task by grabbing data from an external API, performing calculations, and inserting it into an excel sheet."
     }
 ]
 

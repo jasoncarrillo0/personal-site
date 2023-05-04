@@ -49,8 +49,8 @@ const projects = {
     },
     crudTablesApp: {
         title: "Dynamic CRUD Tables App",
-        impact: "Decreased data search time from 5 minutes to seconds.",
-        summary: "Full-stack web app for an IT business that enables a user to create custom tables for specific properties serviced by the business."
+        impact: "Decreased process completion time by 80%",
+        summary: "Full stack web app for an IT business featuring table creation and editable rows (CRUD), and site-wide full-text search functionality."
     },
     arabicToolsApp: {
         title: "Language Learning Tool (Arabic)",
