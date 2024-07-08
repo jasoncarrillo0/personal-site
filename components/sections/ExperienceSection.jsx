@@ -10,6 +10,11 @@ import { SCROLL_ELEMENT_NAMES } from '../../utils/constants';
 
 const jobs = [
     {
+        company: "Freelance/Founding Engineer",
+        dates: "Jan 2024 - Present",
+        description: "Currently verifying my own custom B2B/B2C SaaS solution by conducting user interviews (20+) and identifying their core problems using active listening and a market-validation process - MVP in progress. Also built a full-stack client-management solution for an IT business."
+    },
+    {
         company: "Supono Holdings LTD",
         dates: "April 2021 - October 2022",
         description: "Full-stack developer; owned, built, and deployed 3 projects from start to finish to AWS and GCP. Added 5000+ users to an app, tripled A/B test frequency, increased ad revenue by 20%, and cut developer costs by 5%."

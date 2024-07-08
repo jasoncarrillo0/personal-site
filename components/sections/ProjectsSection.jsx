@@ -14,6 +14,7 @@ import SocialMediaBackend from './ProjectsSection/Projects/social-media-app/Soci
 import CrudTablesApp from './ProjectsSection/Projects/crud-tables-app/CrudTablesApp';
 import ArabicToolsApp from './ProjectsSection/Projects/arabic-tools/ArabicTools';
 import RealEstateOverviewProject from './ProjectsSection/Projects/real-estate-overview/RealEstateOverviewApp';
+import SaasMvp from './ProjectsSection/Projects/spark/SaasMvp';
 const projects = {
     abtests: {
         title: "A/B Test Collaboration Tool",
@@ -60,6 +61,10 @@ const projects = {
         title: "Real Estate Market Overview Generator",
         impact: "Generates market data for nearly every US county/city.",
         summary: "NextJS web app to help me analyze markets to invest in. Integrates with the US Census Bureau API, and Google APIs."
+    },
+    saasMvp: {
+        title: "Mentorship B2B/B2C MVP",
+        summary: "I'm currently working with another founder on a mentorship solution for a niche market, performing user interviews, and building an MVP."
     }
 };
 const ProjectsSection = () => {
@@ -77,7 +82,7 @@ const ProjectsSection = () => {
                     <NaggiarProject {...projects.naggiarProj}/>
                     <RealEstateOverviewProject {...projects.realEstateApp}/>
                     <ArabicToolsApp {...projects.arabicToolsApp}/>
-                    <CrwnClothingProject {...projects.crwnClothingProj}/>
+                    <SaasMvp {...projects.saasMvp} />
                 </div>
                 <ViewGithub/>
             </section>

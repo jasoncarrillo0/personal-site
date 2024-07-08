@@ -33,7 +33,7 @@ const Motivation = () => {
                             or a customer-facing application. I'm a people person, so working with and serving people is a motivator for me.
                         </p>
                         <p>
-                            I'm most excited about working with distributed systems. This is the next area I want to break into, especially using industry standard tools like Apache Kafka and Kubernetes.
+                            Areas of interest: distributed systems. This is the next area I'd like to break into, especially using industry standard tools like Apache Kafka and Kubernetes.
                         </p>
                     </div>
                 </div>
