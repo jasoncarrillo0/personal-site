@@ -10,8 +10,13 @@ import { SCROLL_ELEMENT_NAMES } from '../../utils/constants';
 
 const jobs = [
     {
+        company: "Noodle Group LLC",
+        dates: "Nov 2024 - Present",
+        description: "Enhancing product reliability by adding features, maintaining microservices built on AWS, and fixing bugs."
+    },
+    {
         company: "Freelance/Founding Engineer",
-        dates: "Jan 2024 - Present",
+        dates: "Jan 2024 - Nov 2024",
         description: "Currently verifying my own custom B2B/B2C SaaS solution by conducting user interviews (20+) and identifying their core problems using active listening and a market-validation process - MVP in progress. Also built a full-stack client-management solution for an IT business."
     },
     {

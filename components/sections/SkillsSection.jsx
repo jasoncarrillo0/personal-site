@@ -19,26 +19,39 @@ import redis from '../../public/skills/redis_logo.svg';
 import gcp from '../../public/skills/gcp_logo.png';
 import sql from '../../public/skills/sql-logo.png';
 import Skill from './SkillsSection/Skill';
+import postgreSQL from '../../public/skills/Postgresql_logo.png';
+import firebase from '../../public/skills/firebase_logo.png';
 import ExperienceTitle from './ExperienceSection/ExperienceTitle';
+import git from '../../public/skills/git_logo.png';
+import tailwind from '../../public/skills/tailwind_logo.svg';
+import nextjs from '../../public/skills/nextjs_logo.png';
+import python from '../../public/skills/python_logo.png';
+
+
+
+
+
 import { Element } from 'react-scroll'
 import { SCROLL_ELEMENT_NAMES } from '../../utils/constants';
+
+
 const skills = [
-    { "React": react },
-    { "Redux": redux },
-    { "NodeJS": nodejs },
-    { "MongoDB": mongodb },
     { "TypeScript": typescript},
-    { "JavaScript": js },
-    { "HTML5": html},
-    { "CSS3": css },
-    { "SASS": sass },
-    { "Responsive Design": responsive },
-    { "Material-UI": mui},
+    { "NodeJS": nodejs },
+    { "React": react },
+    { "PostgreSQL": postgreSQL},
+    { "MongoDB": mongodb },
+    { "Firebase": firebase},
     { "Google Cloud Platform": gcp },
     { "Amazon Web Services": aws },
     { "Docker": docker },
-    { "SQL": sql},
-    { "Redis": redis }
+    { "Redis": redis },
+    { "NEXTJS": nextjs},
+    { "TailwindCSS": tailwind},
+    { "SASS": sass },
+    { "Material-UI": mui},
+    { "Git": git},
+    { "Python": python}
 ];
 
 

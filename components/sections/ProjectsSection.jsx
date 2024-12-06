@@ -49,8 +49,8 @@ const projects = {
         summary: "A basic app to login to spotify and search artists and albums, with the infinite scroll effect."
     },
     crudTablesApp: {
-        title: "Dynamic CRUD Tables App",
-        impact: "Decreased process completion time by 80%",
+        title: "Client Management Portal",
+        impact: "Decreased client processing time by 80% for an IT business",
         summary: "Full stack web app for an IT business featuring table creation and editable rows (CRUD), and site-wide full-text search functionality."
     },
     arabicToolsApp: {
@@ -64,7 +64,8 @@ const projects = {
     },
     saasMvp: {
         title: "Mentorship B2B/B2C MVP",
-        summary: "I'm currently working with another founder on a mentorship solution for a niche market, performing user interviews, and building an MVP."
+        impact: "Delivered a PostgreSQL data model, shaped product vision, and cut MVP completion time in half.",
+        summary: "Worked with a founder to design a product and design backend infrastructure."
     }
 };
 const ProjectsSection = () => {
@@ -75,6 +76,7 @@ const ProjectsSection = () => {
             <section className={s.wrap}>
                 <ProjectsTitle/>
                 <div className={s.projectsWrap}>
+                    <SaasMvp {...projects.saasMvp} />
                     <SocialMediaBackend {...projects.socialMediaProj}/>
                     <AbTestProject {...projects.abtests}/> 
                     <CustomerDataProject {...projects.customerDataProj}/>
@@ -82,7 +84,6 @@ const ProjectsSection = () => {
                     <NaggiarProject {...projects.naggiarProj}/>
                     <RealEstateOverviewProject {...projects.realEstateApp}/>
                     <ArabicToolsApp {...projects.arabicToolsApp}/>
-                    <SaasMvp {...projects.saasMvp} />
                 </div>
                 <ViewGithub/>
             </section>
